@@ -1,0 +1,247 @@
+.summary-container {
+    max-width: 700px; /* Retain smaller width */
+    margin: 30px auto; /* Retain compact margin */
+    font-family: 'Inter', 'Arial', sans-serif;
+    /* Removed background: #f9fafb or any background property */
+    border-radius: 16px; /* Retain smaller radius */
+    padding: 20px; /* Retain compact padding */
+    display: block; /* Retain vertical stacking */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Retain lighter shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .summary-container:hover {
+    transform: translateY(-4px); /* Retain reduced lift on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Retain reduced enhanced shadow */
+  }
+  
+  .username {
+    margin-bottom: 20px; /* Reduced space */
+  }
+  
+  .greeting {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .divider.subtle {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 10px 0; /* Reduced space */
+  }
+  
+  .section {
+    background: #fff;
+    border-radius: 12px; /* Retain smaller radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); /* Retain lighter shadow */
+    transition: box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    margin-bottom: 20px; /* Retain reduced space between sections */
+    position: relative;
+    overflow: hidden;
+    min-width: 100%; /* Retain full width for stacked layout */
+    max-width: none; /* Retain no max-width */
+  }
+  
+  .section:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Retain lighter, smaller shadow on hover */
+    transform: translateY(-3px); /* Retain reduced lift on hover */
+    background: #f9fafb; /* Retain subtle background change on hover */
+  }
+  
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Retain slightly thinner accent bar */
+    background: linear-gradient(90deg, #3182ce, #38a169); /* Retain gradient accent bar */
+    opacity: 0;
+    transition: opacity 0.2s ease; /* Retain faster transition */
+  }
+  
+  .section:hover::before {
+    opacity: 1; /* Retain show on hover */
+  }
+  
+  .equity-card {
+    border-left: 6px solid #3182ce; /* Retain thinner blue accent */
+  }
+  
+  .holdings-card {
+    border-left: 6px solid #38a169; /* Retain thinner green accent */
+  }
+  
+  .section-title {
+    font-size: 16px; /* Retain smaller title */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a5568;
+    letter-spacing: 0.8px; /* Retain slightly reduced spacing */
+    margin-bottom: 15px; /* Retain reduced margin */
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; /* Retain slightly higher for compactness */
+    left: 0;
+    width: 40px; /* Retain smaller underline */
+    height: 2px; /* Retain thinner underline */
+    background: linear-gradient(90deg, #3182ce, #38a169); /* Retain gradient underline */
+    border-radius: 2px; /* Retain smaller radius */
+    transition: width 0.2s ease; /* Retain faster transition */
+  }
+  
+  .section:hover .section-title::after {
+    width: 50px; /* Retain smaller expanded underline on hover */
+  }
+  
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Retain reduced space */
+  }
+  
+  .first {
+    text-align: center;
+  }
+  
+  .highlight {
+    font-size: 32px; /* Retain smaller numbers */
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+    background: linear-gradient(90deg, #3182ce, #38a169); /* Retain gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.03); /* Retain lighter, smaller shadow */
+  }
+  
+  .profit {
+    font-size: 32px; /* Retain smaller numbers */
+    font-weight: 700;
+    color: #38a169;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Retain reduced space */
+    text-shadow: 0 0.5px 1px rgba(56, 161, 105, 0.15); /* Retain lighter, smaller shadow */
+  }
+  
+  .gain {
+    font-size: 16px; /* Retain smaller percentage */
+    font-weight: 600;
+    color: #38a169;
+    background: rgba(56, 161, 105, 0.08); /* Retain slightly less opaque background */
+    padding: 6px 10px; /* Retain reduced padding */
+    border-radius: 8px; /* Retain slightly smaller radius */
+    box-shadow: 0 1px 4px rgba(56, 161, 105, 0.08); /* Retain lighter, smaller shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .gain:hover {
+    transform: translateY(-1px); /* Retain reduced lift on hover */
+    box-shadow: 0 2px 6px rgba(56, 161, 105, 0.1); /* Retain lighter, smaller enhanced shadow */
+  }
+  
+  .label {
+    font-size: 14px; /* Retain smaller label */
+    color: #718096;
+    margin: 8px 0 0; /* Retain reduced margin */
+    text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.01); /* Retain lighter, smaller shadow */
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px dashed #e2e8f0; /* Retain thinner dashed line */
+    margin: 15px 0; /* Retain reduced space */
+  }
+  
+  .second {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Retain reduced space */
+  }
+  
+  .metric {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px; /* Retain smaller metrics */
+    color: #4a5568;
+    margin: 0;
+    padding: 8px 0; /* Retain reduced padding */
+    border-bottom: 1px solid #e2e8f0; /* Retain subtle separator */
+    transition: background 0.2s ease;
+  }
+  
+  .metric:hover {
+    background: #f9fafb; /* Retain subtle background on hover */
+  }
+  
+  .metric:last-child {
+    border-bottom: none; /* Remove separator for last item */
+  }
+  
+  .value {
+    font-weight: 700;
+    color: #2d3748;
+    text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.01); /* Retain lighter, smaller shadow */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .summary-container {
+      max-width: 100%;
+      padding: 15px; /* Retain even smaller padding on mobile */
+      margin: 15px; /* Retain reduced margin */
+    }
+  
+    .section {
+      padding: 20px; /* Retain slightly reduced padding on mobile */
+      margin-bottom: 20px; /* Retain reduced space on mobile */
+    }
+  
+    .section-title {
+      font-size: 14px; /* Retain smaller title on mobile */
+    }
+  
+    .highlight,
+    .profit {
+      font-size: 28px; /* Retain smaller numbers on mobile */
+    }
+  
+    .gain {
+      font-size: 14px; /* Retain smaller percentage on mobile */
+      padding: 4px 8px; /* Retain reduced padding */
+    }
+  
+    .label {
+      font-size: 12px; /* Retain smaller label on mobile */
+    }
+  
+    .metric {
+      font-size: 14px; /* Retain smaller metrics on mobile */
+      padding: 6px 0; /* Retain reduced padding */
+    }
+  }
+  
+  /* Animation for loading */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px); /* Retain reduced animation distance */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    animation: fadeIn 0.3s ease forwards; /* Retain faster animation */
+  }
