@@ -4,13 +4,14 @@ A **MERN stack** project that replicates the basic functionality and design of t
 
 ## 🚀 Live Demo
 
-🔗 **Visit:** [Live Link](#) *([Replace with actual deployed link](https://stock-trading-platform020325.onrender.com))*
+🔗 **Visit:** [Live Link](#) *((https://stock-trading-platform020325.onrender.com))*
 
 ## 📸 Screenshots
 
 &#x20;*(![image](https://github.com/user-attachments/assets/031d6fff-1ecd-45e9-8b45-bd885163216b)
-)*  *(Replace with actual image path)*
+)*
 ![image](https://github.com/user-attachments/assets/746597fd-f1f0-44a1-a6b8-db41ebb5555c)
+
 
 ## ✨ Features
 
