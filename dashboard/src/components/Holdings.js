@@ -9,7 +9,7 @@ const Holdings = () => {
   // Fetch data from the backend
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allHoldings")
+      .get("https://stock-trading-platform020325-db.onrender.com/allHoldings")
       .then((res) => {
         console.log(res.data);
         setAllHoldings(res.data);

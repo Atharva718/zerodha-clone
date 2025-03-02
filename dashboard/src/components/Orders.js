@@ -8,7 +8,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost:3002/allOrders"); // Replace with your backend URL
+        const response = await fetch("https://stock-trading-platform020325-db.onrender.com/allOrders"); // Replace with your backend URL
         const data = await response.json();
         setOrders(data);
       } catch (error) {

@@ -8,7 +8,7 @@ const Positions = () => {
   // Fetch data from the backend
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allPositions")
+      .get("https://stock-trading-platform020325-db.onrender.com/allPositions")
       .then((res) => {
         console.log(res.data);
         setAllPositions(res.data);
