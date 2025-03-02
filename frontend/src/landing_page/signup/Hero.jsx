@@ -21,7 +21,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const { data } = await axios.post("http://localhost:3002/signup", inputValue, {
+      const { data } = await axios.post("https://stock-trading-platform020325-db.onrender.com", inputValue, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -42,7 +42,7 @@ const Signup = () => {
 
   // Function to handle Guest Login redirection
   const handleGuestLogin = () => {
-    window.location.href = "http://localhost:3000/positions";
+    window.location.href = "https://stock-trading-platform020325-dashbaord.onrender.com";
   };
 
   return (

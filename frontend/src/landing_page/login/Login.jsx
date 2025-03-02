@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
   const toDashboard = () => {
-    window.location.href = "http://localhost:3000/holdings"; // Redirecting to holdings page
+    window.location.href = "https://stock-trading-platform020325-dashbaord.onrender.com"; // Redirecting to holdings page
   };
 
   const [inputValue, setInputValue] = useState({
@@ -33,7 +33,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://stock-trading-platform020325-db.onrender.com",
         { ...inputValue },
         { withCredentials: true }
       );
